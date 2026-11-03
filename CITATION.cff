@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si BIOSFERA te resulta útil en tu trabajo o investigación, cítalo así:"
+type: software
+title: "BIOSFERA: el cuaderno del naturalista"
+authors:
+  - family-names: "Ragazzon Gallo"
+    given-names: "Federico Alejandro"
+    email: "faragazzon@mi.unc.edu.ar"
+version: "1.2.1"
+date-released: "2026-11-02"
+license: MIT
+repository-code: "https://github.com/faragazzon/biosfera"
+abstract: "Simulación de vida con economía termodinámica unificada según el modelo triádico de materia, energía y voluntad. Implementación completa y jugable del Proyecto 9 «BIOSFERA» del documento «Aplicaciones del modelo triádico de la existencia a la programación, la inteligencia artificial y los videojuegos», sobre la tesis «Materia, Energía y Voluntad: hacia una teoría unificada de la realidad» de F. A. Ragazzon Gallo (2026). HTML + CSS + JavaScript puro, sin dependencias; gráficos y sonido 100% procedurales."
+keywords:
+  - "vida artificial"
+  - "simulación de ecosistemas"
+  - "modelo triádico"
+  - "agencia"
+  - "arquitectura de agentes"
+  - "juego HTML5"
+  - "artificial life"
+  - "ecosystem simulation"
+  - "agent architecture"
+  - "agency"

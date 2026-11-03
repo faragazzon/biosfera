@@ -10,7 +10,11 @@ Todo el juego se ejecuta **en tu navegador, en local, sin servidor, sin conexió
 
 ## Cómo ejecutarlo
 
-1. Descomprime (si procede) la carpeta `biosfera/`.
+**Jugar online:** https://faragazzon.github.io/biosfera/
+
+**O en local:**
+
+1. Descarga o clona este repositorio.
 2. Haz doble clic en **`index.html`** (o ábrelo con Chrome, Edge o Firefox).
 3. Pulsa **«Recibir la reserva»**. Listo.
 
@@ -85,14 +89,6 @@ Cada mecánica traza su origen. `[D]` = derivación directa de la tesis · `[P]`
 
 ---
 
-## Novedades de la versión 1.1
-
-- **Ficha de campo**: la biografía y el panel ya conservan su posición de lectura al refrescarse (antes el scroll volvía arriba cada medio segundo); renombrar ya no se interrumpe por el refresco.
-- **Animaciones de comer y beber**: la cabeza baja hasta la hierba o el agua con cada bocado, mandíbula al masticar, lengüetazo al beber, ojos entornados de gusto, migas que saltan, gotas y ondulaciones en el punto exacto de la boca.
-- **Crecimiento de cría a adulto**: las criaturas nacen pequeñas (30 % de su tamaño) y crecen de forma continua y visible hasta su tamaño definitivo al madurar; al hacerse adultas se anota en su biografía y despiden un pequeño destello. La economía interna no cambia: el equilibrio ecológico de la reserva es exactamente el de la versión 1.0.
-
----
-
 ## Estructura del proyecto
 
 ```
@@ -122,14 +118,48 @@ biosfera/
 
 ---
 
-## Solución de problemas
+## English — BIOSFERA: The Naturalist's Notebook
 
-- **No abre nada**: activa JavaScript en el navegador.
-- **No se oye**: el navegador exige un clic antes de iniciar el audio; pulsa cualquier parte de la pantalla de inicio. Revisa el volumen en Ajustes.
-- **El guardado no funciona**: algunos navegadores restringen `localStorage` en `file://`. Usa **Exportar/Importar** partida (menú con `Esc`).
-- **Rendimiento lento**: juega con la velocidad 3×/8× en lugar de muchas pestañas; el juego está optimizado para ~140 criaturas.
-- **Quiero empezar de nuevo**: `Esc` → «Nueva reserva (semilla nueva)». Puedes anotar una semilla en la pantalla de inicio para compartir mundos idénticos.
+**A life simulation with a unified thermodynamic economy, built on the triadic model (matter, energy and will).**
+
+Complete, playable implementation of **Project 9 “BIOSFERA”** from *Applications of the Triadic Model of Existence to Programming, Artificial Intelligence and Video Games* (ch. 6, §6.2), which applies the thesis *Matter, Energy and Will: Toward a Unified Theory of Reality* by F. A. Ragazzon Gallo (2026).
+
+The whole game runs **in your browser, locally, with no server, no network and no external dependencies**: pure HTML + CSS + JavaScript, with 100% procedural graphics and sound.
+
+**Play online:** https://faragazzon.github.io/biosfera/
+
+### Your role: naturalist, not god
+
+You cannot give orders to the creatures. You **observe, document and cultivate**. Each creature runs a three-layer decision architecture (automatic / appraisal / reflective), manages an energy budget with thermodynamic degradation, inherits both a genome and a “doctrine” (learned weights) from its parents, holds placebo/nocebo expectations, and dies leaving a legacy (biomass, residue, descendants).
+
+### Controls
+
+| Action | Control |
+| --- | --- |
+| Move camera | Drag with mouse · `W A S D` / arrows |
+| Zoom | Mouse wheel |
+| Pause / resume | `Space` |
+| Speed | `1` · `3` · `8` |
+| Tools | `Z` observe · `X` sow · `C` water · `V` mycelium · `B` feeder · `N` baptize · `P` photograph |
+| Field notebook | `R` |
+| Codex | `K` |
+| Follow selected creature | `F` |
+| Honesty letter | `H` |
+| Menu / close panels | `Esc` |
+| Jump on map | Click on minimap |
+
+### Honesty limits
+
+Nothing in this game validates regions 3 and 6 of the triadic model or any metaphysical claim. The creatures are *functional (artificial)* region 7: full agency, zero experience. Simulations demonstrate design fertility, never ontological truth. An in-game **honesty letter** (key `H`) makes these limits explicit to the player.
 
 ---
 
-**Créditos**: Implementación del Proyecto 9 (BIOSFERA) del programa de aplicaciones del modelo triádico — tesis base y documento de aplicación de F. A. Ragazzon Gallo (2026). Desarrollo: juego original en HTML/CSS/JS. «Simplifica sin mentir.»
+## Licencia / License
+
+Código: **MIT** (archivo `LICENSE`). Se puede reutilizar para cualquier propósito citando al autor.
+
+## Cómo citar / How to cite
+
+Pulsa el botón **«Cite this repository»** de GitHub, o usa el archivo `CITATION.cff`.
+
+**Créditos**: Implementación del Proyecto 9 (BIOSFERA) del programa de aplicaciones del modelo triádico — tesis base y documento de aplicación de F. A. Ragazzon Gallo (2026). «Simplifica sin mentir.»
