@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOSFERA — El cuaderno del naturalista</title>
+<meta name="description" content="Simulación de vida con economía termodinámica según el modelo triádico (materia, energía y voluntad). El naturalista observa, documenta y cultiva: nunca manda.">
+<link rel="stylesheet" href="css/biosfera.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='12' cy='13' r='8' fill='%23c9a45a' opacity='.55'/%3E%3Ccircle cx='20' cy='13' r='8' fill='%237ab8c9' opacity='.55'/%3E%3Ccircle cx='16' cy='20' r='8' fill='%238fd694' opacity='.55'/%3E%3C/svg%3E">
+</head>
+<body>
+<noscript>
+  <div style="padding:2rem;font-family:Georgia,serif;color:#e9efe6;background:#141a14;position:fixed;inset:0;z-index:999">
+    <h1>BIOSFERA necesita JavaScript</h1>
+    <p>Este juego se ejecuta por completo en tu navegador. Activa JavaScript y recarga la página.</p>
+  </div>
+</noscript>
+
+<div id="app">
+  <!-- El terrario -->
+  <canvas id="lienzo"></canvas>
+  <div id="vineta" aria-hidden="true"></div>
+
+  <!-- HUD -->
+  <header id="barra-sup" aria-label="Barra superior"></header>
+  <div id="toasts" aria-live="polite"></div>
+  <nav id="barra-inf" aria-label="Herramientas del naturalista"></nav>
+
+  <!-- Ficha de campo (izquierda) -->
+  <aside id="inspector" class="oculto" aria-label="Ficha de campo"></aside>
+
+  <!-- Cuaderno (derecha) -->
+  <aside id="cajon" class="oculto" aria-label="Cuaderno de campo">
+    <button id="cajon-cerrar" class="btn-mini-cerrar" title="Cerrar (Esc)">✕</button>
+    <div id="cajon-tabs" role="tablist"></div>
+    <div id="cajon-cont" role="tabpanel"></div>
+  </aside>
+
+  <!-- Minimapa -->
+  <div id="minimapa-wrap" title="Mapa de la reserva: clic para saltar">
+    <canvas id="minimapa" width="184" height="115"></canvas>
+  </div>
+
+  <!-- Pistas del tutorial -->
+  <div id="pistas" aria-live="polite"></div>
+
+  <!-- Tooltip -->
+  <div id="tooltip" class="oculto" role="tooltip"></div>
+
+  <!-- Modales -->
+  <div id="modal-raiz" class="oculto"></div>
+
+  <!-- Introducción -->
+  <div id="intro" class="oculto"></div>
+
+  <!-- Carga y errores -->
+  <div id="cargando"><div class="cargando-caja"><div class="espora-giro"></div><p>Preparando la reserva…</p></div></div>
+  <div id="error-fatal" class="oculto"></div>
+</div>
+
+<!-- Núcleo del modelo -->
+<script src="js/config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/triadico.js"></script>
+<script src="js/genoma.js"></script>
+<script src="js/mundo.js"></script>
+<script src="js/criatura.js"></script>
+<script src="js/poblacion.js"></script>
+<script src="js/registro.js"></script>
+<!-- Presentación -->
+<script src="js/render.js"></script>
+<script src="js/render-criaturas.js"></script>
+<script src="js/render-efectos.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ui-paneles.js"></script>
+<!-- Orquestación -->
+<script src="js/juego.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
